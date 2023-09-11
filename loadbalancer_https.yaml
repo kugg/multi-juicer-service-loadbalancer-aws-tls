@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: multi-juicer-service-loadbalancer
   annotations:
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:eu-north-1:058480393195:certificate/c5d798b5-3978-4dcd-9d4e-9f0a17cc20f0
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: <ARN to TLS Cert from ACM>
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
     service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "https"
 spec:
